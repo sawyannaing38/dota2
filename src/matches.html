@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../dist/output.css">
+    <title>Matches</title>
+</head>
+<body class="bg-darkblack">
+    <h1 class="mt-2.5 mb-5 text-center font-roboto text-3xl text-white">Matches</h1>
+    <h2 class="text-center font-roboto text-2xl text-white">Filter</h2>
+    <div class="ml-2.5 mr-2.5 mb-8 flex justify-center items-center space-x-2.5 ">
+        <div class="flex flex-col space-y-1 items-center">
+            <div class="flex space-x-2.5 items-center">
+                <input type="text" name="date" id="date" placeholder="Day/Month/Year" autocomplete="off" class="bg-black placeholder:text-blue text-center py-1 text-white">
+            </div>
+        </div>
+        <select name="hero" id="hero" class="bg-black text-blue py-1 px-1 cursor-pointer">
+            <option value="all" selected>All Heroes</option>
+            <option value="1">Antimage</option>
+            <option value="2">Axe</option>
+            <option value="3">Bane</option>
+            <option value="4">BloodSeeker</option>
+            <option value="5">Crystal Maiden</option>
+            <option value="6">Drow Ranger</option>
+            <option value="7">Earthshaker</option>
+            <option value="8">Juggernaut</option>
+            <option value="9">Mirana</option>
+            <option value="10">Morphling</option>
+            <option value="11">Nevermore</option>
+            <option value="12">Phantom Lancer</option>
+            <option value="13">Puck</option>
+            <option value="14">Pudge</option>
+            <option value="15">Razor</option>
+            <option value="16">Sand King</option>
+            <option value="17">Storm Spirit</option>
+            <option value="18">Sven</option>
+            <option value="19">Tiny</option>
+            <option value="20">Vengeful Spirit</option>
+            <option value="21">Windrunner</option>
+            <option value="22">Zeus</option>
+            <option value="23">Kunkka</option>
+            <option value="25">Lina</option>
+            <option value="26">Lion</option>
+            <option value="27">Shadow Shaman</option>
+            <option value="28">Slader</option>
+            <option value="29">Tidehunter</option>
+            <option value="30">Witch Doctor</option>
+            <option value="31">Lich</option>
+            <option value="32">Riki</option>
+            <option value="33">Enigma</option>
+            <option value="34">Tinker</option>
+            <option value="35">Sniper</option>
+            <option value="36">Necrophos</option>
+            <option value="37">Warlock</option>
+            <option value="38">Beastmaster</option>
+            <option value="39">Queen of Pain</option>
+            <option value="40">Venomancer</option>
+            <option value="41">Faceless Void</option>
+            <option value="42">Wraith King</option>
+            <option value="43">Death Prophet</option>
+            <option value="44">Phantom Assassin</option>
+            <option value="45">Pugna</option>
+            <option value="46">Templar Assassin</option>
+            <option value="47">Viper</option>
+            <option value="48">Luna</option>
+            <option value="49">Dragon Kinght</option>
+            <option value="50">Dazzle</option>
+            <option value="51">Clockwerk</option>
+            <option value="52">Leshrac</option>
+            <option value="53">Nature's Prophet</option>
+            <option value="54">Lifestealer</option>
+            <option value="55">Dark Seer</option>
+            <option value="56">Clinkz</option>
+            <option value="57">Omniknight</option>
+            <option value="58">Enchantress</option>
+            <option value="59">Huskar</option>
+            <option value="60">Night Stalker</option>
+            <option value="61">Broodmother</option>
+            <option value="62">Bounty Hunter</option>
+            <option value="63">Weaver</option>
+            <option value="64">Jakiro</option>
+            <option value="65">Batrider</option>
+            <option value="66">Chen</option>
+            <option value="67">Spectre</option>
+            <option value="68">Ancient Apparition</option>
+            <option value="69">Doom</option>
+            <option value="70">Ursa</option>
+            <option value="71">Spirit Breaker</option>
+            <option value="72">Gyrocopter</option>
+            <option value="73">Alchemist</option>
+            <option value="74">Invoker</option>
+            <option value="75">Silencer</option>
+            <option value="76">Outworld Destroyer</option>
+            <option value="77">Lycan</option>
+            <option value="78">Brewmaster</option>
+            <option value="79">Shadow Demon</option>
+            <option value="80">Lone Druid</option>
+            <option value="81">Chaos Knight</option>
+            <option value="82">Meepo</option>
+            <option value="83">Treant Protector</option>
+            <option value="84">Ogre Magi</option>
+            <option value="85">Undying</option>
+            <option value="86">Rubick</option>
+            <option value="87">Disruptor</option>
+            <option value="88">Nyx Assassin</option>
+            <option value="89">Naga Siren</option>
+            <option value="90">Keeper of the Light</option>
+            <option value="91">Io</option>
+            <option value="92">Visage</option>
+            <option value="93">Slark</option>
+            <option value="94">Medusa</option>
+            <option value="95">Troll Warlord</option>
+            <option value="96">Centaur Warrunner</option>
+            <option value="97">Magnus</option>
+            <option value="98">Timbersaw</option>
+            <option value="99">Bristleback</option>
+            <option value="100">Tusk</option>
+            <option value="101">Skywrath Mage</option>
+            <option value="102">Abadon</option>
+            <option value="103">Elder Titan</option>
+            <option value="104">Legion Commander</option>
+            <option value="105">Techies</option>
+            <option value="106">Ember Spirit</option>
+            <option value="107">Earth Spirit</option>
+            <option value="108">Underlord</option>
+            <option value="109">Terroblade</option>
+            <option value="110">Phoenix</option>
+            <option value="111">Oracle</option>
+            <option value="112">Winter Wyvern</option>
+            <option value="113">Arc Warden</option>
+            <option value="114">Monkey King</option>
+            <option value="119">Dark Willow</option>
+            <option value="120">Pangolier</option>
+            <option value="121">Grimstroke</option>
+            <option value="123">Hoodwink</option>
+            <option value="126">Void Spirit</option>
+            <option value="128">Snapfire</option>
+            <option value="129">Mars</option>
+            <option value="135">Dawnbreaker</option>
+            <option value="136">Marci</option>
+            <option value="137">Primal Beast</option>
+            <option value="138">Muerta</option>
+        </select>
+        <i class="fa-solid fa-magnifying-glass text-white cursor-pointer hover:text-blue" id="search-btn"></i>
+    </div>
+    <div class="ml-2.5 mr-2.5 space-y-2.5" id="parent">
+    </div>
+    <div class="ml-2.5 mr-2.5 space-y-2.5" id="filterMatch">
+    </div>
+    <script src="./js/matches.js"></script>
+    <script src="https://kit.fontawesome.com/4c2fd19fa6.js" crossorigin="anonymous"></script>
+</body>
+</html>

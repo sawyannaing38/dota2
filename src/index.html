@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Dota2 Stats</title>
+</head>
+<body class="min-h-[100vh] bg-black font-inter">
+    <header class="bg-darkblack flex justify-center space-x-2.5 items-center shadow-sm shadow-darkblack py-2">
+        <img src="./images//logo.png" alt="Logo" class="w-16">
+        <h1 class="text-4xl text-white">Dota2 Stats</h1>
+    </header>
+    <main class="text-center mt-8 w-[90%] mx-auto mb-10 lg:flex lg:justify-center lg:space-x-10 lg:items-center">
+        <div class="lg:w-[40%] lg:text-left">
+            <section class="w-[90%] mx-auto">
+                <h2 class="text-3xl text-blue">What this website is about?</h2>
+                <p class="text-white text-lg py-5">
+                    It is a dota2 third party website powered by 
+                    <a class="text-blue" href="">OpenDota</a>
+                    and 
+                    <a class="text-blue" href="">Steam</a>
+                    .You can look
+                </p>
+                <ul class="text-left text-blue list-disc text-lg">
+                    <li>
+                        Your dota2 Match History and details like items, spell learning, gpm, xpm,
+                        kills, duration etc...
+                    </li>
+                    <li>
+                        Your overall dota2 stats for each hero for best record avg gmp ,xpm etc...
+                    </li>
+                    <li>
+                        Also you can go to your steam profile and check friends.
+                    </li>
+                    <li>
+                        Tournment Match details.
+                    </li>
+                </ul>
+            </section>
+            <section class="py-8">
+                <h2 class="text-3xl text-blue">Why we ask to Login?</h2>
+                <p class="text-lg text-white py-5 text-left">
+                    We need your dota2 ID in order to get those 
+                    game related data. We only ask to login just 
+                    to keep you always see you stats every time 
+                    you open the app.We don’t track any data.
+                </p>
+            </section>
+        </div>
+        <div class="text-white lg:w-[40%]">
+            <h2 class="text-3xl pb-8">Login Here</h2>
+            <div class="w-[70%] mx-auto max-w-[300px] flex justify-center">
+                <div class="w-full flex flex-col items-end space-y-5">
+                    <div class="flex flex-col items-start w-full space-y-1">
+                        <label for="steam">Steam ID</label>
+                        <input class="w-full border-2 h-10 focus:outline-none bg-darkblack pl-2.5 text-white" type="number" id="steam" name="steam">
+                    </div>
+                    <div class="flex flex-col items-start w-full space-y-1">
+                        <label for="dota2">Dota2 ID</label>
+                        <input class="w-full border-2 h-10 focus:outline-none bg-darkblack pl-2.5 text-white" type="number" id="dota2" name="dota2">
+                    </div>
+                    <button class="bg-blue w-full max-w-[100px] h-10 outline-none text-lg font-bold hover:bg-white hover:text-black active:bg-white active:text-black" id="login">Login</button>
+                </div>
+            </div>
+            <p id="error" class="text-red-300 mt-10"></p>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>

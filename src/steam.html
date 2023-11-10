@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../dist/output.css">
+    <title>Steam Profile</title>
+</head>
+<body class="bg-darkblack">
+    <header>
+        <h1 class="text-white font-roboto text-3xl text-center mt-2.5 mb-8">Dota2 Stats</h1>
+        <div class="flex flex-col space-y-8 lg:flex-row lg:mx-2.5 lg:justify-between lg:items-center lg:space-y-0" id="profile">
+            
+        </div>
+    </header>
+
+    <div class="flex flex-col space-y-8 mb-5 lg:flex-row lg:justify-around lg:space-x-10 lg:space-y-0 lg:items-center">
+        <div class="mt-8 lg:border-t-4 lg:border-r-4 lg:border-t-radient lg:border-r-radient lg:pt-2.5 lg:pr-10 lg:w-[40%]">
+            <h2 class="ml-2.5 font-sans text-2xl text-white mb-5 text-center">Friends List</h2>
+            <div class="flex flex-col space-y-2.5 max-h-[100vh] overflow-y-scroll" id="friends">
+                
+            </div>
+        </div>
+        <div class="lg:w-[40%]">
+            <h2 class="text-white text-2xl font-sans text-center mb-5">Recent Played Games</h2>
+            <div class="flex flex-col space-y-2.5" id="games">
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/steam.js"></script>
+</body>
+</html>

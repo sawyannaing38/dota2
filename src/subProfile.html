@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Document</title>
+</head>
+<body class="bg-darkblack">
+    <header class="bg-black flex justify-between items-center relative py-2.5">
+        <div class="flex space-x-2.5 items-center cursor-pointer">
+            <img src="./images/logo.png" alt="Logo" class="w-[50px]">
+            <h1 class="text-white text-4xl">Dota2 Stats</h1>
+        </div>
+        <nav class="max-h-0 navigation-main lg:max-h-[200px] mr-5" id="navigation-content">
+            <ul class="flex flex-col items-center space-y-2.5 py-2.5 lg:flex-row lg:space-x-2.5 lg:items-center lg:space-y-0">
+                <li><a class="text-white hover:text-blue transition-color duration-100" href="detailstat.html?ref=sub">Stats</a></li>
+                <li><a class="text-white hover:text-blue transition-color duration-100" href="matches.html?ref=sub">Matches</a></li>
+            </ul>
+        </nav>
+        <div class="text-blue text-2xl cursor-pointer lg:hidden" id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main class="mt-5">
+        <div class="flex justify-between items-center" id="profile">
+        </div>
+        <div class="mt-10 flex justify-between text-center lg:mx-auto lg:max-w-[600px]" id="stats">
+        </div>
+        <h2 class="mt-6 mb-5 mx-2.5 text-white text-3xl">Recent Matches</h2>
+        <div id="match">
+        </div>
+        <div class="mt-6 flex justify-between items-center text-white text-lg lg:max-w-[500px] lg:mx-auto">  
+            <button class="bg-blue w-10 h-10 cursor-pointer ml-2.5 btn hidden">1</button>
+            <button class="bg-blue w-10 h-10 cursor-pointer btn hidden">2</button>
+            <button class="bg-blue w-10 h-10 cursor-pointer btn hidden">3</button> 
+            <button class="bg-blue w-10 h-10 cursor-pointer mr-2.5 btn hidden">4</button>
+        </div>
+    </main>
+    <footer class="mt-6 pt-6 border-t-2 border-t-blue">
+        <h1 class="text-blue text-3xl ml-2.5 mb-5">Dota2 Statz</h1>
+        <p class="ml-2.5 text-white">Powered by <a href="" class="text-green-500">OpenDota</a></p>
+        <nav class="mt-2.5 mb-5 ml-2.5">
+            <ul class="flex space-x-2.5 text-white">
+                <li><a class ="underline decoration-blue" href="">Stats</a></li>
+                <li><a class ="underline decoration-blue" href="">Matches</a></li>
+                <li><a class ="underline decoration-blue" href="">Tournment Matches</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./js/subProfile.js" type="module"></script>
+</body>
+</html>

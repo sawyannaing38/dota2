@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navigation-main {
+    @apply absolute top-full left-0 bg-darkblack flex justify-center items-center w-full text-white overflow-y-hidden max-h-[200px] ease-linear transition-all duration-1000
+          lg:static lg:block lg:w-auto lg:bg-transparent;
+  }
+
+  .search-bar {
+    @apply  text-white pl-1 rounded-md border-2 border-blue bg-transparent focus:outline-none mr-2;
+  }
+
+  .box {
+    @apply w-[15%] max-w-[60px] border-2 border-white text-white bg-black text-[12px];
+  }
+
+  .match {
+    @apply bg-black text-blue text-[12px] flex justify-between text-center h-[50px] items-center mx-2.5 shadow-sm shadow-blue mb-5;
+  }
+
+  .game {
+    @apply lg:mx-auto lg:max-w-[1000px] flex space-x-8 items-center bg-black overflow-x-scroll py-2 lg:overflow-x-hidden hover:shadow-sm hover:shadow-radient hover:cursor-pointer;
+  }
+
+  .info {
+    @apply w-[100%] max-w-[600px] border-2 flex justify-between items-center mx-auto py-1 bg-black;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: aqua; 
+}
